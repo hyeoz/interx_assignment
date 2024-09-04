@@ -1,3 +1,16 @@
+function checkInput() {
+  const input = document.getElementById("question-1-input");
+  const button = document.getElementById("question-1-button");
+
+  if (input.value.trim() !== "") {
+    button.disabled = false;
+  } else {
+    button.disabled = true;
+  }
+}
+
+checkInput();
+
 const checkStringComplete = () => {
   let isComplete;
 
