@@ -33,3 +33,27 @@ const checkStringComplete = () => {
 document
   .getElementById("question-1-button")
   .addEventListener("click", checkStringComplete);
+
+let fibonacciCount = 10;
+
+const getFibonacci = (n) => {
+  let a = 0,
+    b = 1,
+    temp,
+    text = "";
+
+  for (let i = 2; i <= n; i++) {
+    text += `${b} `;
+    temp = a + b;
+    a = b;
+    b = temp;
+  }
+
+  document.getElementById("question-2-string").innerText = text;
+};
+
+getFibonacci(fibonacciCount);
+document.getElementById("question-2-button").addEventListener("click", () => {
+  fibonacciCount += 10;
+  getFibonacci(fibonacciCount);
+});
