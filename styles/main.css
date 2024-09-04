@@ -1,0 +1,23 @@
+body {
+  padding: 16px;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+section {
+  border: 1px solid grey;
+  padding: 12px;
+}
+
+#question-1-input {
+  width: 50%;
+  height: 32px;
+  font-size: 16px;
+}
+#question-1-button {
+  height: 32px;
+}
